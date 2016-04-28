@@ -28,3 +28,25 @@
 
 ![image](../images/4.png "分列显示")
 
+
+### Webstorm集成mocha单元测试
+---
+先安装mocha，我选用的是断言库chai，一并安装。
+```
+npm install -g --save mocha
+npm install --save chai
+```
+然后进入菜单栏，创建一个新的配置项
+`Run->Edit Configurations`
+
+选择绿色+添加Mocha
+
+![image](../images/5.png "添加Mocha")
+
+除了Name，其他基本都配置好无需修改
+
+![image](../images/6.png "添加Mocha")
+
+保存后操作`Run->Run MochaTest`或者`shift + F10`便可在Webstorm中使用Mocha
+
+![image](../images/7.png "Run MochaTest")
